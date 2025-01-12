@@ -4,7 +4,6 @@ Data Engineer QyrusAssignment
 
 1. Clone the repository
     git clone https://github.com/payalyadav85/QyrusAssignment.git
-    cd QyrusAssignment
 2. Start the services using Docker Compose
     docker-compose up
 3. Populate the SQS queue with sample data
