@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import redis
+import uvicorn
 import os
 
 api = FastAPI()
@@ -24,3 +25,9 @@ def globalStats():
 @api.get("/")
 def read_root():
     return {"message": "Hello, Qyrus !!"}
+
+
+if __name__ == '__main__':
+    # Run FastAPI app on a specific port (e.g., port 8001)
+    uvicorn.run(api, host="0.0.0.0", port=8080)
+
